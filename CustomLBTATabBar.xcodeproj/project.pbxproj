@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		0969031325AC6B8E00E86442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969031225AC6B8E00E86442 /* ContentView.swift */; };
 		0969031525AC6B8F00E86442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0969031425AC6B8F00E86442 /* Assets.xcassets */; };
 		0969031825AC6B8F00E86442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0969031725AC6B8F00E86442 /* Preview Assets.xcassets */; };
+		096C123C25B1F0A500A3DB72 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 096C123B25B1F0A500A3DB72 /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096C123C25B1F0A500A3DB72 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = CustomLBTATabBar;
+			packageProductDependencies = (
+				096C123B25B1F0A500A3DB72 /* SwiftUIX */,
+			);
 			productName = CustomLBTATabBar;
 			productReference = 0969030D25AC6B8E00E86442 /* CustomLBTATabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 0969030425AC6B8D00E86442;
+			packageReferences = (
+				096C123A25B1F0A500A3DB72 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 0969030E25AC6B8E00E86442 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		096C123A25B1F0A500A3DB72 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftuix/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		096C123B25B1F0A500A3DB72 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 096C123A25B1F0A500A3DB72 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0969030525AC6B8D00E86442 /* Project object */;
 }
